@@ -6,7 +6,7 @@ class PageHeader extends HTMLElement {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
   renderRoutes(){
-    const routes = ["order", "ingredient", "beverage", "size",];
+    const routes = ["order", "ingredient", "beverage", "size", "report"];
     return routes.reduce((acc, route)=> acc + 
     `<li class="nav-item">
       <a class="nav-link" href="/app/${route}/${route}s.html">${this.capitalize(route)}s</a>
